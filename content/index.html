@@ -1,41 +1,40 @@
-{% extends "_onecol.html" %}
-
-{% block title %}Welcome{% endblock %}
+{% extends "_twocols.html" %}
 
 {% block body %}
-<h2>Welcome to the 3rd International Workshop on Software Health</h2>
-<h3>Seoul, South Korea - May, 2020 - co-located with ICSE</h3>
-<img class="location-picture" src="{{ "assets/pictures/hangang-river-4026243_1920.jpg"|relative }}" />
-<p style="font-size:22px">
-  <b>SoHeal 2020</b> will be co-located with the 42nd International Conference on Software Engineering (<a href="https://conf.researchr.org/home/icse-2020" target="_blank"><b>ICSE 2020</b></a>) in Seoul, South Korea.
-</p>
+  <h2>Welcome to the 3rd International Workshop on Software Health</h2>
+  <h4>Seoul, South Korea - May, 2020 - co-located with 42nd International Conference on Software Engineering (<a href="https://conf.researchr.org/home/icse-2020" target="_blank"><b>ICSE 2020</b></a>)</h4>
 
-<p>
-  <b>SoHeal</b> aims to enable and promote collaboration between academia and industry, unifying the views on software health of researchers and practitioners. The workshop's goals are to: (1) raise awareness of practitioners' problems with software health; (2) familiarize practitioners with the progress made by academia; and (3) connect the two communities to further advance the body of knowledge and state of the practice on software health.
-</p>
+  <img class="location-picture" src="{{ "assets/pictures/seoul.png"|relative }}" />
+  
+  <p>
+    <b>SoHeal</b> aims to enable and promote collaboration between academia and industry, unifying the <b>views on software health of researchers and practitioners</b>. The workshop's goals are to: (i) raise awareness of practitioners' problems with software health; (ii) familiarize practitioners with the progress made by academia; and (iii) connect the two communities to further advance the body of knowledge and state of the practice on software health.
+  </p>
 
-<p>
-  Factors impacting software health can vary depending on the viewpoint of the involved stakeholders: process factors, technical factors concerning the source code and related software artefacts, social factors concerning the communities of software contributors and users, and business factors concerning commercial aspects of the software product. Because of this variety, there is no clear definition of what constitutes software health, since it encompasses many different development and evolution attributes, including success, longevity, growth, resilience, survival, diversity, sustainability, etc.
-</p>
+  <p>
+    Factors impacting software health can vary depending on the viewpoint of the involved stakeholders: <i>process</i> factors, <i>technical</i> factors concerning the source code and related software artefacts, <i>social</i> factors concerning the communities of software contributors and users, and <i>business</i> factors concerning commercial aspects of the software product. Because of this variety, there is no clear definition of <b>what constitutes software health</b>, since it encompasses many different development and evolution attributes, including success, longevity, growth, resilience, survival, diversity, sustainability, etc.
+  </p>
 
-<p>
-  As can be witnessed by recent initiatives such as the Linux Foundation’s <a href="https://chaoss.community/">CHAOSS project</a> on community health analytics
-  and the <a href="https://secohealth.github.io">SecoHealth</a> research project on software ecosystem health, the research community and the industry have realized the need for a socio-technical perspective concerning software health. Such a perspective is challenging, due to the volatile storage of information regarding social relations, conflicts and interactions. There is a need to find better methods, techniques and tools to monitor software health, as well as to predict and take corrective measures when health implications arise. Finally, a project's health should also consider the health of the ecosystem in which the project participates to obtain a holistic view of software health. Thus, a better understanding is needed of how the health metrics, indicators and their operationalization can be aggregated from project-level to ecosystem level.
-</p>
+  <p>
+    As can be witnessed by recent initiatives such as the Linux Foundation's <a href="https://chaoss.community/">CHAOSS project</a> on community health analytics, the research community and the industry have realized the need for a <b>socio-technical perspective</b> concerning software health. Such a perspective is challenging, due to the volatile storage of information regarding social relations, conflicts and interactions. There is a need to find better methods, techniques and tools to monitor software health, as well as to predict and take corrective measures when health implications arise. Finally, a project's health should also consider the <b>health of the ecosystem</b> in which the project participates to obtain a holistic view of software health. Thus, a better understanding is needed of how the health metrics, indicators and their operationalization can be aggregated from project-level to ecosystem level.
+  </p>
 
 <h2>Important dates</h2>
 <ul>
-  <li><b>Position paper submission deadline</b>: <b> February, 2020</b></li>
-  <li><b>Industry/Practitioner talk proposal deadline</b>: February, 2020</li>
-  <li><b>Notification of acceptance</b>: March, 2020</li>
-  <li><b>Camera Ready for accepted position papers</b>: March, 2020</li>
-  <li><b>Workshop</b>: May, 2020</li>
+  <li><b>Position paper submission deadline</b>: <b>January 22, 2020</b></li>
+  <li><b>Industry/Practitioner talk proposal deadline</b>: <b>January 22, 2020</b></li>
+  <li><b>Notification of acceptance</b>: February 25, 2020</li>
+  <li><b>Camera Ready for accepted position papers</b>: March 16, 2020</li>
+  <li><b>Workshop</b>: May (24 or 25 or 26), 2020</li>
 </ul>
 
 <h2>Registration</h2>
 To be announced
 
-<!--<h2>Latest Tweets</h2>
-<a class="twitter-timeline" href="https://twitter.com/iw_soheal?ref_src=twsrc%5Etfw">Tweets by iw_soheal</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+{% endblock %}
+
+{% block sidebar %}
+<h2>Latest Tweets</h2>
+<a class="twitter-timeline" width="400" height="500" href="https://twitter.com/iw_soheal?ref_src=twsrc%5Etfw">Tweets by iw_soheal</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 {% endblock %}
