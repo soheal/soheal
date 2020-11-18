@@ -17,11 +17,10 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li{% if page == 'index.html' %} class="active"{% endif %}><a href="/">Home</a></li>
+            <li{% if page == 'index.html' %} class="active"{% endif %}><a href="index.html">Home</a></li>
             {% for text, url in [
                 ('Call for papers', 'cfp.html'),
                 ('Call for talks', 'cft.html'),
-                ('Program', 'program.html'),
                 ('Special Issue', 'special_issue.html'),
                 ('Committees', 'committees.html'),
                 ('Steering Committee', 'steering.html'),
